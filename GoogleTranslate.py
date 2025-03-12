@@ -1,15 +1,13 @@
 from googletrans import Translator
 
-
-
 class Google_Tradutor:
 
-    def __init__(self, name):
-        self.name = name
-        print(self.name)
+    def __init__(self, message):
+        self.message = message
+        print(self.message)
 
-
-
+    
+    
     def __en__(self):
 
         translate = Translator()
@@ -45,9 +43,7 @@ class Google_Tradutor:
                 print(">> SinxtaError.")
                 quit()
 
-
-
-code_translate = Google_Tradutor(name="(API)\tGoogle Tranlator\n")
-
 if __name__ == "__main__":
+    code_translate = Google_Tradutor(message="(API)\tGoogle Tranlator\n")
     code_translate.__ExecCode__()
+
